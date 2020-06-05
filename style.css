@@ -75,6 +75,9 @@ a:hover{
     font-size: 22px;
     text-align: left;
     display: flex;
+    /* background-size: 100%;
+    width:auto; */
+    background-attachment: local;
     
 }
 .care-left{
