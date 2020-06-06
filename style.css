@@ -26,8 +26,6 @@ header{
     background-color: white;
     width: 100%;
    padding: 0.5rem 0;
-   /* position: fixed;
-   z-index: 2; */
 }
 .logo{
     position: relative;
@@ -75,19 +73,24 @@ a:hover{
     font-size: 22px;
     text-align: left;
     display: flex;
-    /* background-size: 100%;
-    width:auto; */
-    background-attachment: local;
+    align-items: center;
+    background-attachment: scroll;
+    position: relative;
     
 }
-.care-left{
-    width: 80%;
-    padding-left: 6%;
+.icon-left i, .icon-right i{
+    width: 5%;
+    font-size: 2.5rem;
+    color: gray;
 }
-/* .care-right{
+.care-left{
+    width: 70%;
+    padding-left: 6%;
+    
+}
+.care-right{
     width: 20%;
-} */
-
+}
 .care1-h{
     margin-top: 10%;
     font-size: 22px;
@@ -118,7 +121,6 @@ a:hover{
 }
 .care1-button{
     padding: 5% 0%;
-    /* margin-left: -5%; */
 }
 .care1-h h3{
     color: rgb(247, 46, 46);
@@ -136,7 +138,6 @@ button:hover{
 }
 .button1{
     background-color:rgb(8, 8, 121);
-    /* margin-left: 5%; */
 }
 .button2{
     background-color: rgb(131, 12, 12);
@@ -144,22 +145,17 @@ button:hover{
 }
 .over{
     width: 100%;
-    height: 100%;
     display: flex;
-    padding: 1.5em 0em;
 }
 .over1{
-    width: 25%;
-    margin: 3% 3%;
+    width: 33%;
     padding: 1% 1%;
 }
 .over1 img{
     width: 100%;
-}
-/* .image-over{
-    width: 100%;
     position: relative;
-} */
+}
+
 .over1 a{
     color: royalblue;
 }
@@ -196,7 +192,6 @@ button:hover{
 .say-bottom-reight{
     width: 50%;
     display: flex;
-    /* padding: 0 1%; */
 }
 .say1-1, .say1-2, .say2-1, .say2-2{
     width: 50%;
@@ -207,7 +202,6 @@ button:hover{
     color: white;
 }
 .say h4{
-    /* padding-top: 3%; */
     color: rgb(44, 41, 41);
 }
 .say img{
@@ -221,9 +215,6 @@ button:hover{
     background-color: rgb(228, 238, 235);
     padding: 3% 3%;
 }
-/* .our-top{
-    padding: 5% 5%;
-} */
 .our-bottom{
     display: flex;
     padding: 3% 0;
@@ -237,7 +228,7 @@ button:hover{
 }
 .our-right{
     width: 30%;
-    padding: 0 5%;
+    padding-left: 3%;
     
 }
 .our-left1, .our-left2, .our-left3{
@@ -341,6 +332,9 @@ button:hover{
     width: 40%;
     margin-left: 7%;
 }
+.bars{
+    display: none;
+}
 @media (max-width: 785px){
     .ul{
         display: none;
@@ -397,4 +391,27 @@ button:hover{
     .end-betwen2{
         width: 50%;
     }
+    .bars{
+        display: block;
+        width: 30%;
+        text-align: center;
+        margin-top: 3%;
+
+    }
+    .container{
+        display: flex;
+    }
+    .logo{
+        width: 70%;
+    }
+    .bars i{
+        font-size: 2rem;
+        color: rgb(109, 108, 108);
+        border: 1px solid black;
+        border-radius: 10%;
+        box-shadow:cadetblue 10%;
+        padding: 2% 3%
+        
+    }
+
 }

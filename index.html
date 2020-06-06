@@ -9,9 +9,11 @@
   </head>
   <body>
     <header>
-      <div>
-        <img class="logo" src="image/logo.png" alt="logo" />
+      <div class="container">
+        <div class="logo"><img src="image/logo.png" alt="logo" /></div>
+        <div class="bars"><i class="fas fa-bars"></i></div>
       </div>
+      
       <div class="ul">
         <ul>
           <li class="li1"><a href="#home">home</a></li>
@@ -27,9 +29,9 @@
           </li>
         </ul>
       </div>
-      <div class="bars"><i class="fas fa-bars"></i></div>
+     
     </header>
-    <div class="care1">
+    <div class="care1" id="care1">
       <div class="icon-left"><i class="fas fa-chevron-circle-left"></i></div>
       <div class="care-left">
           <div class="care1-h">
@@ -47,30 +49,10 @@
             <button class="button2">BY NOW</button>
         </div>
       </div>
-      <div class="icon-right"> <i class="fas fa-chevron-circle-right"></i> </div>
+      <div class="care-right"></div>
+      <div class="icon-right"><i class="fas fa-chevron-circle-right"></i></div>
      
     </div>
-    <!-- <div class="care1 care2">
-      <div class="care-left">
-          <div class="care1-h">
-            <h3>HAPPINESS IS THE KEY </h3>
-          <h1>WITH ELDERLY CARE </h1>
-          </div>
-        <p class="care1-p">
-          Ideal theme for any Elderly Care businness ou need With visual
-          Composer, Revolution slider and other awesome features, you cannot go
-          wrong.
-        </p>
-        <p class="care1-p-right"></p>
-        <div class="care1-button">
-            <button class="button1">EXPLORE</button>
-            <button class="button2">BY NOW</button>
-        </div>
-      </div>
-    </div> -->
-
-
-
     <div class="over">
         <div class="over1">
             <img class="image-over" src="image/img1.jpg" alt="image-over">
@@ -221,6 +203,11 @@
     <script
       src="https://kit.fontawesome.com/607b7b9d04.js"
       crossorigin="anonymous"
-    ></script>
+    >
+  
+  function myfunction(){
+    document.getElementById("care1").style.backgroundImage = url("image/bg-2.jpg");
+  }
+  </script>
   </body>
 </html>
