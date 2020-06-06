@@ -85,7 +85,7 @@ a:hover{
 }
 .care-left{
     width: 70%;
-    padding-left: 6%;
+    /* padding-left: 6%; */
     
 }
 .care-right{
@@ -104,7 +104,7 @@ a:hover{
     }
 }
 .care1-p{
-    width: 40%;
+    width: 60%;
     padding-top: 3%;
     text-align: left;
     color: gray;
@@ -117,7 +117,7 @@ a:hover{
     }
 }
 .care1-p-right{
-    width: 60%;
+    width: 40%;
 }
 .care1-button{
     padding: 5% 0%;
@@ -335,7 +335,7 @@ button:hover{
 .bars{
     display: none;
 }
-@media (max-width: 785px){
+@media (min-width: 500px) and (max-width: 785px){
     .ul{
         display: none;
     }
@@ -412,6 +412,119 @@ button:hover{
         box-shadow:cadetblue 10%;
         padding: 2% 3%
         
+    }
+    .say-bottom-left, .say-bottom-reight{
+        display: block;
+    }
+    .say1-1,.say1-2,.say2-1,.say2-2{
+        width: 100%;
+    }
+    .say1-2,.say2-2{
+        margin-top: 5%;
+    }
+
+}
+@media (max-width: 499px){
+    .ul{
+        display: none;
+    }
+    .over{
+        display: block;
+    }
+    .over1{
+        width: 100%;
+    }
+    .say-bottom{
+        display: inline-block;
+    }
+    .say-bottom-left,.say-bottom-reight{
+        width: 100%;
+    }
+    .say-bottom-reight{
+        margin-top: 5%;
+    }
+    .our-bottom{
+        display: inline-block;
+    }
+    .our-left, .our-right{
+        width: 100%;
+    }
+    .our-right{
+        margin-top: 5%;
+    }
+    .find-bottom{
+        display: inline-block;
+        width: 100%;
+    }
+    .find1, .find2,.find3{
+        width: 100%;
+        padding-right: 1%;
+    }
+    .find1-icon,.find2-icon,.find3-icon{
+        padding-left: 5%;
+        width: 20%;
+        font-size: 1rem;
+    }
+    .find1-text,.find2-text,.find3-text{
+        width: 80%;
+    }
+    .button-end{
+        font-size: 15px;
+    }
+    .end-betwwen a{
+        font-size: 13px;
+    }
+    .end-betwen1{
+        width: 50%;
+    }
+    .end-betwen2{
+        width: 50%;
+    }
+    .bars{
+        display: block;
+        width: 30%;
+        text-align: center;
+        margin-top: 3%;
+
+    }
+    .container{
+        display: flex;
+    }
+    .logo{
+        width: 70%;
+    }
+    .bars i{
+        font-size: 2rem;
+        color: rgb(109, 108, 108);
+        border: 1px solid black;
+        border-radius: 10%;
+        box-shadow:cadetblue 10%;
+        padding: 2% 3%
+        
+    }
+    .say-bottom-left, .say-bottom-reight{
+        display: block;
+    }
+    .say1-1,.say1-2,.say2-1,.say2-2{
+        width: 100%;
+    }
+    .say1-2,.say2-2{
+        margin-top: 5%;
+    }
+    .end-betwwen{
+        display: none;
+    }
+    .end-left{
+        width: 70%;
+    }
+    .end-right{
+        width: 30%;
+    }
+    .care1-h h3, .care1-h h1{
+        font-size: 25px;
+    }
+    .care-left{
+        width: 100%;
     }
 
 }
