@@ -130,8 +130,9 @@ a:hover{
 }
 button{
     padding: 7px 10px;
-    border-radius: 15%;
+    border-radius: 5%;
     color: white;
+    outline: none;
 }
 button:hover{
     background-color:burlywood;
@@ -245,6 +246,9 @@ button:hover{
 .our-right button{
     margin-top: 5%;
     background-color: olivedrab;
+}
+.our-right button:hover{
+    background-color: rgb(219, 159, 137);
 }
 .find-bottom{
     display: flex;
