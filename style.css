@@ -84,31 +84,31 @@ a:hover{
 .icon-left i, .icon-right i{
     width: 5%;
     font-size: 2.5rem;
-    color: gray;
+    color: rgb(221, 221, 221);
 }
 .icon-left i:hover, .icon-right i:hover{
     color: lightblue;
 }
 .care-left{
-    width: 70%;
-    /* padding-left: 6%; */
-    
+    width: 90%;
 }
-.care-right{
-    width: 20%;
-}
+/* .care-right{
+    width: 10%;
+} */
 .care1-h{
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 22px;
     text-align: left;
     transform: translateX(-100%);
     animation: leftcomin 0.5s linear forwards;
+    width: 80%;
 }
 .button-none{
    outline: none;
    background: none;
    border: none;
-   padding-right: 20px;
+   padding-left: 10%;
+   width: 5%;
 } 
 #button-none:hover{
     background:none;
@@ -125,6 +125,7 @@ a:hover{
     color: gray;
     transform: translateX(100%);
     animation: leftcomin 0.5s linear forwards;
+    font-size: 16px;
 }
 @keyframes rightcomin{
     to{
@@ -343,7 +344,7 @@ a:hover{
 }
 .button-end{
     background-color: mediumaquamarine;
-    padding: 7px 10px;
+    padding: 3% 5%;
     border-radius: 5%;
     color: white;
     outline: none;
@@ -373,6 +374,9 @@ a:hover{
 @media (min-width: 500px) and (max-width: 785px){
     .ul{
         display: none;
+    }
+    .button-none i{
+        font-size: 30px;
     }
     .care1-p{
         display: none;
@@ -472,6 +476,9 @@ a:hover{
     .ul{
         display: none;
     }
+    .button-none i{
+        font-size: 30px;
+    }
     .care1-p{
         display: none;
     }
@@ -522,7 +529,7 @@ a:hover{
         width: 80%;
     }
     .button-end{
-        font-size: 15px;
+        font-size: 14px;
     }
     .end-betwwen a{
         font-size: 13px;
@@ -547,12 +554,12 @@ a:hover{
         width: 70%;
     }
     .bars i{
-        font-size: 2rem;
         color: rgb(109, 108, 108);
         border: 1px solid black;
         border-radius: 10%;
         box-shadow:cadetblue 10%;
-        padding: 2% 3%
+        padding: 2% 3%;
+        font-size: 25px;
         
     }
     .say-bottom-left, .say-bottom-reight{
