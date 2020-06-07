@@ -32,11 +32,12 @@
      
     </header>
     <div class="care1" id="care1">
-      <div class="icon-left"><i class="fas fa-chevron-circle-left"></i></div>
+      <!-- <div class="icon-left"><i class="fas fa-chevron-circle-left"></i></div> -->
+      <div class="icon-left"><button type="button" class = "button-none" onclick="myfunction1()"><i class="fas fa-chevron-circle-left"></i></button></div>
       <div class="care-left">
           <div class="care1-h">
-            <h3>THE LOVE AND CARE</h3>
-          <h1>FOR YOUR COLDEN YEARS</h1>
+            <h3 id="change-h3">THE LOVE AND CARE</h3>
+          <h1 id="change-h1">FOR YOUR COLDEN YEARS</h1>
           </div>
         <p class="care1-p">
           Ideal theme for any Elderly Care businness ou need With visual
@@ -50,7 +51,8 @@
         </div>
       </div>
       <div class="care-right"></div>
-      <div class="icon-right"><i class="fas fa-chevron-circle-right"></i></div>
+      <!-- <div class="icon-right"></button><i class="fas fa-chevron-circle-right"></i></div> -->
+      <div class="icon-right"><button type="button" class = "button-none" onclick="myfunction2()"><i class="fas fa-chevron-circle-right"></i></button></div>
      
     </div>
     <div class="over">
@@ -204,10 +206,19 @@
       src="https://kit.fontawesome.com/607b7b9d04.js"
       crossorigin="anonymous"
     >
-  
-  function myfunction(){
-    document.getElementById("care1").style.backgroundImage = url("image/bg-2.jpg");
-  }
+  </script>
+
+  <script>
+    function myfunction1(){
+      document.getElementById("care1").style.backgroundImage = 'url("/image/bg-3.jpg")';
+      document.getElementById("change-h3").innerHTML = "STAYING IN SHAPE AT HOME";
+      document.getElementById("change-h1").innerHTML = "HOME CARE PROGRAM";
+    }
+    function myfunction2(){
+      document.getElementById("care1").style.backgroundImage = 'url("/image/bg-2.jpg")';
+      document.getElementById("change-h3").innerHTML = "HAPPYNESS IS THE KEY";
+      document.getElementById("change-h1").innerHTML = "WITH ELDERLY CARE";
+    }
   </script>
   </body>
 </html>

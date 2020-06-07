@@ -25,11 +25,14 @@ body p{
 header{
     background-color: white;
     width: 100%;
-   padding: 0.5rem 0;
+  
+}
+.container{
+    padding: 2% 0%;
 }
 .logo{
     position: relative;
-    padding: 1.5em 1.5em;
+    padding-left: 5%;
 }
 ul{
     display: flex;
@@ -83,6 +86,9 @@ a:hover{
     font-size: 2.5rem;
     color: gray;
 }
+.icon-left i:hover, .icon-right i:hover{
+    color: lightblue;
+}
 .care-left{
     width: 70%;
     /* padding-left: 6%; */
@@ -97,6 +103,15 @@ a:hover{
     text-align: left;
     transform: translateX(-100%);
     animation: leftcomin 0.5s linear forwards;
+}
+.button-none{
+   outline: none;
+   background: none;
+   border: none;
+   padding-right: 20px;
+} 
+#button-none:hover{
+    background:none;
 }
 @keyframes leftcomin{
     to{
@@ -128,21 +143,27 @@ a:hover{
 .care1-h h1{
     color: blue;
 }
-button{
+
+/* button:hover{
+    background-color:burlywood;
+} */
+.button1{
+    background-color:rgb(8, 8, 121);
     padding: 7px 10px;
     border-radius: 5%;
     color: white;
     outline: none;
 }
-button:hover{
-    background-color:burlywood;
-}
-.button1{
-    background-color:rgb(8, 8, 121);
-}
 .button2{
     background-color: rgb(131, 12, 12);
     margin-left: 2%;
+    padding: 7px 10px;
+    border-radius: 5%;
+    color: white;
+    outline: none;
+}
+.button1:hover, .button2:hover{
+    background-color:burlywood;
 }
 .over{
     width: 100%;
@@ -246,6 +267,10 @@ button:hover{
 .our-right button{
     margin-top: 5%;
     background-color: olivedrab;
+    padding: 7px 10px;
+    border-radius: 5%;
+    color: white;
+    outline: none;
 }
 .our-right button:hover{
     background-color: rgb(219, 159, 137);
@@ -317,8 +342,14 @@ button:hover{
     margin-left: 5%;
 }
 .button-end{
-    padding: 3% 7%;
     background-color: mediumaquamarine;
+    padding: 7px 10px;
+    border-radius: 5%;
+    color: white;
+    outline: none;
+}
+.button-end:hover{
+    background-color:burlywood;
 }
 .end-betwen1 {
     width: 60%;
@@ -342,6 +373,15 @@ button:hover{
 @media (min-width: 500px) and (max-width: 785px){
     .ul{
         display: none;
+    }
+    .care1-p{
+        display: none;
+    }
+    .care1-h h3,.care1-h h1{
+        font-size: 25px;
+    }
+    .care-left{
+        margin-bottom: 10px;
     }
     .over{
         display: block;
@@ -399,7 +439,7 @@ button:hover{
         display: block;
         width: 30%;
         text-align: center;
-        margin-top: 3%;
+        /* margin-top: 3%; */
 
     }
     .container{
@@ -432,6 +472,15 @@ button:hover{
     .ul{
         display: none;
     }
+    .care1-p{
+        display: none;
+    }
+    .care1-h h3,.care1-h h1{
+        font-size: 20px;
+    }
+    .care-left{
+        margin-left: 10px;
+    }
     .over{
         display: block;
     }
@@ -488,7 +537,7 @@ button:hover{
         display: block;
         width: 30%;
         text-align: center;
-        margin-top: 3%;
+        /* margin-top: 3%; */
 
     }
     .container{
@@ -523,9 +572,6 @@ button:hover{
     }
     .end-right{
         width: 30%;
-    }
-    .care1-h h3, .care1-h h1{
-        font-size: 25px;
     }
     .care-left{
         width: 100%;
