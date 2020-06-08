@@ -460,8 +460,12 @@ a:hover{
         border: 1px solid black;
         border-radius: 10%;
         box-shadow:cadetblue 10%;
-        padding: 2% 3%
-        
+        padding: 2% 3%;
+        transition-duration: 2s;
+    }
+    .bars i:hover{
+        transform: scale(1.2);
+        color: rgb(51, 187, 180);
     }
     .say-bottom-left, .say-bottom-reight{
         display: block;
@@ -564,7 +568,12 @@ a:hover{
         box-shadow:cadetblue 10%;
         padding: 2% 3%;
         font-size: 25px;
+        transition-duration: 2s;
         
+    }
+    .bars i:hover{
+        transform: scale(1.2);
+        color: rgb(51, 187, 180);
     }
     .say-bottom-left, .say-bottom-reight{
         display: block;
@@ -587,5 +596,4 @@ a:hover{
     .care-left{
         width: 100%;
     }
-
 }
